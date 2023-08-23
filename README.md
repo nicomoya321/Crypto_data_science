@@ -45,7 +45,7 @@ Finalmente se creo un DataFrame df_cryptocurrency en el que se unieron los otros
 
 cryptocurrency
 
-EDA
+# EDA
 En nuestro proceso, hacemos uso de diversas librerías que son esenciales para llevar a cabo un análisis exploratorio de datos de manera efectiva. Algunas de las librerías clave que utilizamos son:
 
 requests
@@ -57,20 +57,20 @@ En el proceso de análisis exploratorio de datos, ejecutamos las siguientes etap
 
 Carga y unión de datos: Importamos archivos CSV de los dataframes individuales para cada grupo de monedas y los fusionamos en un único dataframe df_cryptocurrency.
 
-#Limpieza de datos: Realizamos varias tareas de limpieza, entre las que destacan:
+# Limpieza de datos: Realizamos varias tareas de limpieza, entre las que destacan:
 
-Conversión del tipo de dato de la columna "Date" al formato datetime, lo que facilita el análisis temporal.
+Conversión de l tipo de dato de la columna "Date" al formato datetime, lo que facilita el análisis temporal.
 Verificación de la existencia de duplicados y datos nulos, constatando que no existieran anomalías en los datos.
 Formateo de números: Hacemos uso de la librería 'locale' para asegurarnos de que los números se muestren de manera comprensible, en especial cuando se trata de precios en USD y los valores de MarketCap y TotalVolume, que cuentan con separadores de miles.
-#Visualizaciones: Creamos diversas visualizaciones que nos ayudan a entender mejor los datos:
+# Visualizaciones: Creamos diversas visualizaciones que nos ayudan a entender mejor los datos:
 Scatter plot: Esta gráfica visualiza la relación entre el precio, el capital de mercado y el volumen total de diferentes criptomonedas, lo que puede ayudar a identificar patrones y relaciones.
 Gráfico de líneas con áreas: Este tipo de gráfico es ideal para representar la evolución y las tendencias de las criptomonedas a lo largo de un período de tiempo.
-#Matriz de correlación: Utilizamos esta herramienta para descubrir patrones y relaciones más complejas en los precios de las criptomonedas.
+# Matriz de correlación: Utilizamos esta herramienta para descubrir patrones y relaciones más complejas en los precios de las criptomonedas.
 Finalmente, concluimos el proceso guardando el dataframe resultante en un archivo CSV llamado cryptocurrancy_final.cvs, el cual posteriormente utilizamos para alimentar un dashboard que facilita la visualización y comprensión de los datos de manera interactiva y efectiva.
 
 
 
-#Dashboard
+# Dashboard
 Importación de datos.
 Una vez importado el csv cryptocurrency_final, se optó por dividir el dataset en 1 tabla de hecho y 2 tablas de dimensiones según las siguientes variables elegidas del dataset:
 
@@ -83,11 +83,11 @@ Cryptocurrency: tabla de hecho que muestra por cada registro una fecha a partir 
 Una vez efectuadas las creaciones de tablas y algunas transformaciones mínimas en Power Query, procedimos a unir las tablas en la vista "Modelo" mediante la clave primaria de cada tabla con la tabla de transacciones creando un esquema estrella.
 
 
-#General
+# General
 En esta página se brinda una visión general del análisis de criptomonedas. Se presentan varios aspectos clave, como el "Total de Monedas" incluidas en el análisis. Además, se muestra el "Ranking" de las criptomonedas según su capitalización de mercado, lo que permite identificar rápidamente las monedas más influyentes. El "Mercado de Capitalización por Moneda" ilustra la distribución de valor entre las diferentes criptomonedas. También se destacan los valores extremos de "Precio Mínimo" y "Precio Máximo" por moneda, lo que proporciona una comprensión inmediata de la variabilidad de los precios. El análisis temporal se explora mediante el "Precio de las Criptomonedas según la Fecha", mientras que el "Volumen Total por Criptomoneda" revela la actividad de negociación en el mercado.
 
 Esta página se enfoca en los detalles más específicos de las criptomonedas analizadas. Se resaltan los extremos de "Máximo Volumen Total" y "Mínimo Volumen Total", lo que arroja luz sobre las monedas más y menos negociadas. La "Volatilidad del Precio" ofrece información sobre la variabilidad en los precios de las criptomonedas. El "Volumen Total de Negociación por Moneda" refleja la actividad de compra y venta para cada criptomoneda, mientras que el "Cambio Promedio Diario por Moneda" presenta las fluctuaciones diarias de precio.
 
-#KPIs
+#  KPIs
 Esta página alberga los Indicadores Clave de Desempeño (KPIs) más relevantes del análisis. El "Porcentaje de Cambio de Mercado de Capitalización por Moneda" muestra la evolución de la capitalización de mercado para cada criptomoneda. El "Porcentaje de Cambio en el Precio Promedio" refleja cómo los precios han variado en el tiempo. Finalmente, el "Volumen Total de Negociación por Moneda" detalla el nivel de actividad comercial. Estos KPIs proporcionan una instantánea rápida de los aspectos cruciales del análisis de criptomonedas.
 
