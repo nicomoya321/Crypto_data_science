@@ -6,7 +6,7 @@ Para realizar el análisis, se seleccionaron 13 criptomonedas siguiendo dos crit
 
 Se han escogido las siguientes criptomonedas en función de su capitalización:
 
-Bitcoin (BTC)
+Bitcoin (BTC).
 Ethereum (ETH)
 Binance Coin (BNB)
 XRP (XRP)
